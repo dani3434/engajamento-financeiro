@@ -439,16 +439,25 @@ header{
   text-transform: uppercase;
 }
 
-.video{
+.container-video{
+  width: 54%;
   margin: 20px auto;
-  width: 715px;
-  height:400px;
+}
+.video{
   border: 10px solid #FB5;
   border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
 iframe{
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
 }
 
 .btn{
@@ -457,7 +466,7 @@ iframe{
   background: linear-gradient(to right,#fcdb57 5%, #bf8718 100%);
   background-color: #fcdb57;
   width: max-content;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   display: block;
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -465,7 +474,7 @@ iframe{
   text-transform: uppercase;
   font-weight: 500;
   transition: .4s;
-  box-shadow: 0px -5px 14px -7px #bf8718;
+  box-shadow: 0px 10px 14px -7px #bf8718;
   text-shadow: 0px 1px 0px #805910;
 }
 .btn:hover{
@@ -488,6 +497,148 @@ iframe{
   color: #202020;
   line-height: 22px;
   margin-bottom: 10px;
+  max-width: 540px;
+}
+
+/* Sobre a empresa */
+.sobre-bg{
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sobre{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.sobre p{
+  color: #f8f5f5;
+  line-height: 25px;
+  font-size: 1rem;
+  max-width: 540px;
+}
+.sobre-img{
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+/* O que vai aprender */
+
+.aprender-bg{
+  background: url("../img/reuniao(1).jpg") center no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.titulo-aprendizado{
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 40px 0 40px 0;
+}
+
+.aprender-itens h2{
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+.aprender-itens h2 span{
+  font-size: 2.8rem;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.aprender-itens p{
+  line-height: 22px;
+}
+.aprender-img{
+  width: 400px;
+}
+.aprender{
+  justify-content: center;
+}
+.aprender-max-width-itens{
+  max-width: 800px;
+}
+
+.aprender-max-width-img{
+  max-width: 400px;
+}
+
+.btn-aprender{
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to right,#000 5%, #3c3a38 100%);
+  background-color: #0e0e0e;
+  width: max-content;
+  margin: 30px auto 0px auto;
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .4s;
+  box-shadow: 0px 10px 14px -7px #0e0e0e;
+  text-shadow: 0px 1px 0px #cc8c14;
+}
+.btn-aprender:hover{
+  background: linear-gradient(to left,#000 5%, #3c3a38 100%);
+  transition: .4s;
+}
+
+
+/* Bonus */
+
+.bonus-bg{
+  background: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bonus{
+  margin: 50px 0;
+  text-align: center;
+}
+.bonus-itens-img{
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.bonus h2{
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.bonus p{
+  color: #fff;
+}
+
+/* Depoimentos */
+.depoimentos{
+  margin-bottom: 40px;
+}
+.depoimentos-video{
+  border: 5px solid #FB5;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 15px;
+  height: 0;
+}
+.depoimentos-video iframe{
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
 }
 
 /* Anima o scroll */
