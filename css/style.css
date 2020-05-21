@@ -706,6 +706,31 @@ iframe{
   
 }
 
+/* Avisos importantes */
+.avisos-titulo{
+  color: #fff;
+  background: linear-gradient(to right,#fcdb57 5%, #bf8718 100%);
+  background-color: #fcdb57;
+  width: 100%;
+  margin: 15px auto 30px auto;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0px 1px 0px #805910;
+}
+.avisos-ul{
+  max-width: 1060px;
+  text-align: center;
+  margin: 30px auto;
+}
+.avisos-ul li{ 
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
 /* Anima o scroll */
  [data-anime="scroll"]{
   opacity: 0;
@@ -864,4 +889,115 @@ iframe{
 
 .arrow-nav button.prev{
   transform: rotate(-180deg);
+}
+
+/* estilo do acordeão */
+.duvidas{
+  background-color: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.duvidas dl{
+  max-width: 700px;
+  margin: 40px auto;
+}
+.duvidas dt{
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #FB5;
+  font-size: 1.4rem;
+  
+}
+.duvidas dt::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
+}
+.duvidas dd{
+  font-family: Helvetica,Arial;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+  color: #fff;
+}
+/* footer */
+footer{
+  background: #000;
+}
+.separador-footer{
+  max-width: 600px;
+  margin: 0px auto 40px auto;
+  background-color: #fff;
+}
+.titulo-footer{
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.rede-sociais-footer div{
+  display: flex;
+  justify-content: center;
+}
+.rede-sociais-footer .rede-sociais-item{
+  margin-right: 20px;
+}
+.rede-sociais-footer svg{
+  font-size: 30px;
+  color: #bf8718;
+}
+.rede-sociais-footer svg:hover{
+  color: #f1f0f0;
+}
+footer h2{
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+footer p{
+  color: #fff;
+  text-align: center;
+}
+.copy{
+  color: #bf8718;
+  text-transform: uppercase;
+  padding: 30px 0 20px;
+}
+
+
+/* acordeão */
+[data-anime="acordion"] dd{
+  display: none;
+}
+[data-anime="acordion"] dt::after{
+  content: '⬎ ';
+  margin-left: 10px;
+}
+[data-anime="acordion"] dt.ativo::after{
+  content: '⬏';
+}
+[data-anime="acordion"] dd.ativo{
+  display: block;
+  animation: slideDown .5s forwards; 
+}
+
+@keyframes slideDown{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    opacity: 1;
+    max-height: 150px;
+  }
 }

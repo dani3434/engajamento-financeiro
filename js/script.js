@@ -46,7 +46,7 @@ class Slide{
       this.dist.startX = event.changedTouches[0].clientX;
       moveType = "touchmove"
     }
-  
+
    this.wrapper.addEventListener(moveType,this.onMove)
    this.trasition(false)
   }
@@ -163,6 +163,7 @@ class Slide{
     this.addSlideEvent();
     this.slidesConfig();
     this.addResizeEvent();
+    this.onResize();
     this.changeSlide(3)
     return this;
   }
@@ -192,7 +193,30 @@ slide.addArrow('.prev','.next')
 
 
 
+// Acordião de duvidas freguentes
+function acordion(){
 
+  const acordionItem = document.querySelectorAll('[data-anime="acordion"] dt');
+    const ativo = 'ativo';
+    if(acordionItem.length){
+      acordionItem[0].classList.add(ativo);
+      acordionItem[0].nextElementSibling.classList.add(ativo);
+  
+      function activeAcordion(){
+        this.classList.toggle(ativo);
+        this.nextElementSibling.classList.toggle(ativo);
+      }
+  
+  
+      acordionItem.forEach((item) => {
+        item.addEventListener('click',activeAcordion);
+      })
+  }
+  
+  }
+
+  acordion();
+  
 
 // Anima o scroll
 function animacaoScroll(){
