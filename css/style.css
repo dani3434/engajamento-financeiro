@@ -468,6 +468,11 @@ header{
   padding-bottom: 56.25%;
   height: 0;
 }
+@media (max-width:768px){
+  .video{
+    margin-top: 30px;
+  }
+}
 iframe{
     width: 100%;
     height: 100%;
@@ -522,10 +527,19 @@ iframe{
   transition: .4s;
 }
 @media (max-width:475px){
+  .titulo-intro{
+    text-align: center;
+  }
   .btn{
     width: 250px;
     padding: .9rem 0;
     font-size: 1rem;
+  }
+  .btn-intro{
+    width: 250px;
+    padding: .9rem 0;
+    font-size: 1rem;
+    margin: 30px auto 0 auto;
   }
 }
 
@@ -571,7 +585,12 @@ iframe{
   width: 500px;
   margin: 0 auto;
 }
-
+@media (max-width:530px){
+  .sobre-img{
+    height: 400px;
+    width: 400px;
+  }
+}
 /* O que vai aprender */
 
 .aprender-bg{
