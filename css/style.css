@@ -365,6 +365,11 @@ a{
 ul{
   list-style: none;
 }
+/* cores */
+
+/* #FFD71A */
+/* #DE9A13 */
+
 /* Cabeçalho */
 header{
   background-color:#000;
@@ -380,6 +385,8 @@ header{
 }
 .logo a{
   color: white;
+  width: 50px;
+  height: 50px;
 }
 #menu{
   display: flex;
@@ -389,7 +396,7 @@ header{
 
 #menu li a{
   display: block;
-  padding: 17px 12px;
+  padding: 17px 10px;
   margin-right: 5px;
   color: #fff;
   text-decoration: none;
@@ -399,7 +406,7 @@ header{
   font-family: 'Poppins', sans-serif;
 }
 #menu li a:hover{
-  color: #FB5;
+  color:  #DE9A13;
   transition: .4s;
 }
 
@@ -410,7 +417,7 @@ header{
   display: flex;
   align-items: center;
   align-content: center;
-  margin-right: 45px;
+  margin-right: 25px;
   align-self: center;
 }
 .rede-sociais-item svg{
@@ -419,17 +426,19 @@ header{
   flex: 1;
 }
 .rede-sociais-item svg:hover{
-  color: #FB5;
+  color:  #DE9A13;
   transition: .4s;
 }
 
 /* Intro section */
 .intro-bg{
   background: #171717;
-  padding: 30px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .intro{
   background: #171717;
+  align-items: center;
 }
 .titulo{
   font-size: 2.5rem;
@@ -439,12 +448,20 @@ header{
   text-transform: uppercase;
 }
 
-.container-video{
-  width: 54%;
-  margin: 20px auto;
+.titulo-intro{
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height:55px;
 }
+.titulo-intro span{
+ background-color:#DE9A13 ;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
 .video{
-  border: 10px solid #FB5;
   border-radius: 10px;
   position: relative;
   width: 100%;
@@ -463,23 +480,53 @@ iframe{
 .btn{
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(to right,#fcdb57 5%, #bf8718 100%);
+  background: linear-gradient(to right,#fcdb57 5%, #DE9A13 100%);
   background-color: #fcdb57;
-  width: max-content;
+  width: 435px;
   margin: 30px auto 0 auto;
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   border-radius: 10px;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: .4s;
-  box-shadow: 0px 10px 14px -7px #bf8718;
+  box-shadow: 0px 10px 14px -7px #DE9A13;
   text-shadow: 0px 1px 0px #805910;
+  text-align: center;
+}
+.btn-intro{
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to right,#fcdb57 5%, #DE9A13 100%);
+  background-color: #fcdb57;
+  width: 435px;
+  margin: 30px 0 0 0;
+  display: block;
+  padding: 1rem 0;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .4s;
+  box-shadow: 0px 10px 14px -7px #DE9A13;
+  text-shadow: 0px 1px 0px #805910;
+  text-align: center;
 }
 .btn:hover{
-  background: linear-gradient(to left,#fcdb57 5%, #bf8718 100%);
+  background: linear-gradient(to left,#fcdb57 5%, #DE9A13 100%);
   transition: .4s;
+}
+.btn-intro:hover{
+  background: linear-gradient(to left,#fcdb57 5%, #DE9A13 100%);
+  transition: .4s;
+}
+@media (max-width:475px){
+  .btn{
+    width: 250px;
+    padding: .9rem 0;
+    font-size: 1rem;
+  }
 }
 
 /* Quem eu sou */
@@ -520,8 +567,8 @@ iframe{
 }
 .sobre-img{
   border-radius: 50%;
-  height: 350px;
-  width: 350px;
+  height: 500px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -575,10 +622,10 @@ iframe{
   cursor: pointer;
   background: linear-gradient(to right,#000 5%, #3c3a38 100%);
   background-color: #0e0e0e;
-  width: max-content;
+  width: 435px;
   margin: 30px auto 0px auto;
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   border-radius: 10px;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -586,6 +633,14 @@ iframe{
   transition: .4s;
   box-shadow: 0px 10px 14px -7px #0e0e0e;
   text-shadow: 0px 1px 0px #cc8c14;
+  text-align: center;
+}
+@media (max-width:475px){
+  .btn-aprender{
+    width: 250px;
+    padding: .9rem 0;
+    font-size: 1rem;
+  }
 }
 .btn-aprender:hover{
   background: linear-gradient(to left,#000 5%, #3c3a38 100%);
@@ -621,9 +676,10 @@ iframe{
 /* Depoimentos */
 .depoimentos{
   margin-bottom: 40px;
+  display: none;
 }
 .depoimentos-video{
-  border: 5px solid #FB5;
+  border: 5px solid #DE9A13;
   border-radius: 10px;
   position: relative;
   width: 100%;
@@ -682,7 +738,7 @@ iframe{
 }
 .valor-do-curso h2{
   font-size: 2.5rem;
-  color: #FB5;
+  color: #DE9A13;
   font-weight: 700;
   margin: 30px 0;
 }
@@ -709,7 +765,7 @@ iframe{
 /* Avisos importantes */
 .avisos-titulo{
   color: #fff;
-  background: linear-gradient(to right,#fcdb57 5%, #bf8718 100%);
+  background: linear-gradient(to right,#fcdb57 5%, #DE9A13 100%);
   background-color: #fcdb57;
   width: 100%;
   margin: 15px auto 30px auto;
@@ -817,6 +873,7 @@ iframe{
   .rede-sociais a svg:hover{
     color: #000;
   }
+
   @keyframes show-up{
     from{
       opacity: 0;
@@ -833,6 +890,9 @@ iframe{
   }
   .cabecalho {
     padding: 0;
+  }
+  .logo{
+    margin: 10px;
   }
 }
 
@@ -874,7 +934,9 @@ iframe{
   justify-content: space-around;
   margin-bottom: 30px;
 }
-
+.arrow-nav button:focus,.arrow-nav button:active{
+  border: none;
+}
 .arrow-nav button{
   cursor: pointer;
   border: none;
@@ -906,7 +968,7 @@ iframe{
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: .5rem;
-  color: #FB5;
+  color: #DE9A13;
   font-size: 1.4rem;
   
 }
@@ -916,7 +978,7 @@ iframe{
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background: #FB5;
+  background: #DE9A13;
 }
 .duvidas dd{
   font-family: Helvetica,Arial;

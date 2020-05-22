@@ -277,7 +277,7 @@ function outsideClick(element,events,callback){
 const menuMobile = document.querySelector('[data-menu="button-mobile"]');
 const listaMenu = document.querySelector('#menu');
 const redeSociais = document.querySelector('.rede-sociais');
-const eventos = ['click','touchstart'];
+const eventos = ['click'];
 
 if(menuMobile){
     function openMenu(menu){
@@ -288,11 +288,11 @@ if(menuMobile){
       outsideClick(listaMenu,eventos, () =>{
         listaMenu.classList.remove('active');
         menuMobile.classList.remove('active');
-      redeSociais.classList.remove('active');
+        redeSociais.classList.remove('active');
       });
     }
 
-    eventos.forEach((eventos) =>{
-      menuMobile.addEventListener(eventos,openMenu);
+    eventos.forEach((evento) =>{
+      menuMobile.addEventListener(evento,openMenu);
     })
 }
