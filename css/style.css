@@ -587,8 +587,8 @@ iframe{
 }
 @media (max-width:530px){
   .sobre-img{
-    height: 400px;
-    width: 400px;
+    height: 325px;
+    width: 325px;
   }
 }
 /* O que vai aprender */
@@ -622,8 +622,11 @@ iframe{
 .aprender-itens p{
   line-height: 22px;
 }
-.aprender-img{
-  width: 400px;
+
+@media (max-width:768px){
+  .aprender-img{
+    margin-top: 30px;
+  }
 }
 .aprender{
   justify-content: center;
