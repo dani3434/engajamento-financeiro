@@ -370,6 +370,53 @@ ul{
 /* #FFD71A */
 /* #DE9A13 */
 
+/* Pou pop de localização */
+.modal{
+ position: fixed;
+ z-index: 9000;
+ background: linear-gradient(to right,#fcdb57 5%, #DE9A13 100%);
+ padding: 30px;
+ border-radius: 40px;
+ top: 285px;
+ right: 0;
+ animation: modal 2s forwards;
+ box-shadow: 0px 10px 14px -7px #414040;
+}
+
+.modal p{
+  max-width:400px;
+  line-height: 22px;
+}
+@media (max-width:800px){
+  .modal{
+    padding: 20px;
+  }
+  .modal p{
+    max-width:200px;
+    text-align: center;
+  }
+}
+.pessoas {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 5px;
+}
+.localizacao {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 5px;
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translate3d(30px,0px,0);
+  }
+  do{
+    opacity: 1;
+    transform: translate3d(0px,0,0);
+  }
+}
 /* Cabeçalho */
 header{
   background-color:#000;
@@ -468,11 +515,13 @@ header{
   padding-bottom: 56.25%;
   height: 0;
 }
-@media (max-width:768px){
+
+@media (max-width:992px){
   .video{
     margin-top: 30px;
   }
 }
+
 iframe{
     width: 100%;
     height: 100%;
@@ -529,7 +578,20 @@ iframe{
 @media (max-width:475px){
   .titulo-intro{
     text-align: center;
+    font-size: 1.8rem;
+    line-height: 40px;
   }
+  .titulo{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+  .titulo-aprendizado{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+
   .btn{
     width: 250px;
     padding: .9rem 0;
@@ -560,7 +622,15 @@ iframe{
   margin-bottom: 10px;
   max-width: 540px;
 }
-
+@media (max-width:992px){
+  .perfil-info{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .perfil-info p{
+    max-width: 100%;
+  }
+}
 /* Sobre a empresa */
 .sobre-bg{
   background: #000;
@@ -585,12 +655,20 @@ iframe{
   width: 500px;
   margin: 0 auto;
 }
+@media (max-width:992px){
+  .sobre p{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 @media (max-width:530px){
   .sobre-img{
     height: 325px;
     width: 325px;
   }
 }
+
 /* O que vai aprender */
 
 .aprender-bg{
@@ -623,9 +701,12 @@ iframe{
   line-height: 22px;
 }
 
-@media (max-width:768px){
+@media (max-width:992px){
   .aprender-img{
     margin-top: 30px;
+  }
+  .aprender-itens{
+    margin-bottom: 30px;
   }
 }
 .aprender{
@@ -681,6 +762,11 @@ iframe{
   margin: 50px 0;
   text-align: center;
 }
+@media (max-width:992px){
+  .bonus div{
+   margin-bottom: 30px;
+  }
+}
 .bonus-itens-img{
   width: 50px;
   margin: 0 auto;
@@ -694,6 +780,7 @@ iframe{
 .bonus p{
   color: #fff;
 }
+
 
 /* Depoimentos */
 .depoimentos{
@@ -734,6 +821,13 @@ iframe{
 .reembolso p{
   line-height: 22px;
   color: #f1f0f0;
+}
+@media (max-width:768px){
+  .reembolso-img{
+    width: 240px;
+    margin: 0 auto 30px auto;
+
+  }
 }
 
 /* Valor do curso */
@@ -798,6 +892,13 @@ iframe{
   text-transform: uppercase;
   font-weight: 500;
   text-shadow: 0px 1px 0px #805910;
+}
+@media (max-width:475px){
+  .avisos-titulo{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
 }
 .avisos-ul{
   max-width: 1060px;
@@ -867,21 +968,26 @@ iframe{
     background: #FB5;
     width: 100%;
     z-index: 200;
-    padding: 10px 0 50px 0;
+    padding: 0px 0 50px 0;
     top: 0;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
-    margin-top: 70px;
+    margin-top: 90px;
   }
   
   #menu li a{
     padding: 12px 12px;
+    margin: 0;
   }
-
+  #menu li a:hover{
+    background:  #000;
+    color: #fff;
+    transition: .4s;
+  }
   .rede-sociais {
     display: none;
     position: absolute;
     top: 0;
-    margin-top: 255px;
+    margin-top: 275px;
     z-index: 500;
   }
   .rede-sociais.active{

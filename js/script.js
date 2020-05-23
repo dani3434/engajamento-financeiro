@@ -246,6 +246,7 @@ function animacaoScroll(){
 animacaoScroll()
 
 
+// modal localização
 
 
 // função para quando clicar fora do botão de menu
@@ -277,10 +278,11 @@ function outsideClick(element,events,callback){
 const menuMobile = document.querySelector('[data-menu="button-mobile"]');
 const listaMenu = document.querySelector('#menu');
 const redeSociais = document.querySelector('.rede-sociais');
-const eventos = ['click'];
+const eventos = ['click','touchstart'];
 
 if(menuMobile){
     function openMenu(menu){
+      menu.preventDefault();
       listaMenu.classList.toggle('active');
       menuMobile.classList.toggle('active');
       redeSociais.classList.toggle('active');
