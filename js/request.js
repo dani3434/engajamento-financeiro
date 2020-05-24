@@ -3,7 +3,7 @@ class ServicePI {
 
     constructor(){
         // variaveis locais
-        this._loalIp = {};
+        this._localIp = {};
 
 
         //metodos 
@@ -17,9 +17,9 @@ class ServicePI {
        
         if(info)
         {
-            this._loalIp = JSON.parse(info);
+            this._localIp = JSON.parse(info);
             console.log("capturando storange gravado anteriormente...");
-            console.log(this._loalIp)
+            console.log(this._localIp)
 
         }
         else {
@@ -27,7 +27,7 @@ class ServicePI {
             this.requestInfoIp().then(request=>{
              request.json().then(dados => { 
                
-                this._loalIp = dados;
+                this._localIp = dados;
                 localStorage.setItem("localIP", JSON.stringify(dados));
                 console.log("garvando storange ...");
           
