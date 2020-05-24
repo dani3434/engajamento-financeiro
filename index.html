@@ -424,6 +424,15 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/request.js"></script>
+  <script>
+
+    var req = new ServicePI();
+
+    document.querySelector(".localizacao").innerHTML = req.getInfoLocal.city;
+
+  </script>
+
 
 
 </body>
