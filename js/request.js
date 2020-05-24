@@ -81,4 +81,4 @@ function intervaloModal(){
 }
 
 
-setInterval(intervaloModal,1000 * 30)
+setInterval(intervaloModal,1000 * 40)
