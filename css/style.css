@@ -651,6 +651,7 @@ iframe{
   line-height: 25px;
   font-size: 1rem;
   max-width: 540px;
+  margin-bottom: 10px;
 }
 .sobre-img{
   border-radius: 50%;
