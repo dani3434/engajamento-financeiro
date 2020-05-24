@@ -63,23 +63,20 @@ const divModal = document.querySelector('.modal');
 const pessoasNum = document.querySelector('.pessoas');
 
 let i = 0;
+
 function intervaloModal(){
 
     pessoasNum.innerHTML = 300 + i;
 
-    function ativarModal(){
-        divModal.classList.add('active');
-      }
+    divModal.classList.add('active');
       
-      function desativarModal(){
-          divModal.classList.remove('active');
-        }
+    function desativarModal(){
+      divModal.classList.remove('active');
+    }
       
-      setTimeout(ativarModal,3000);
-      
-      setTimeout(desativarModal,1000 * 15);
+    setTimeout(desativarModal,1000 * 15);
 
-      i++
+    i++
 
 }
 
